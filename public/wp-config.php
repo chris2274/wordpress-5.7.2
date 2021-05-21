@@ -47,7 +47,7 @@ define('DB_COLLATE', '');
 
 
 /** SSL*/
-define('MYSQL_CLIENT_FLAGS', MYSQLI_CLIENT_SSL);
+//define('MYSQL_CLIENT_FLAGS', MYSQLI_CLIENT_SSL);
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
