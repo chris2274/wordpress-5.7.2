@@ -23,21 +23,21 @@
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 
-//$connectstr_dbhost = getenv('DATABASE_HOST');
-//$connectstr_dbusername = getenv('DATABASE_USERNAME');
-//$connectstr_dbpassword = getenv('DATABASE_PASSWORD');
+$connectstr_dbhost = getenv('DATABASE_HOST');
+$connectstr_dbusername = getenv('DATABASE_USERNAME');
+$connectstr_dbpassword = getenv('DATABASE_PASSWORD');
 
 /** MySQL database name */
 define('DB_NAME', 'flexibleserverdb');
 
 /** MySQL database username */
-define('DB_USER', 'chris');
+define('DB_USER', $connectstr_dbusername);
 
 /** MySQL database password */
-define('DB_PASSWORD', 'P@ssw0rd!');
+define('DB_PASSWORD',$connectstr_dbpassword);
 
 /** MySQL hostname */
-define('DB_HOST', '10.0.1.162');
+define('DB_HOST', $connectstr_dbhost);
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -47,7 +47,7 @@ define('DB_COLLATE', '');
 
 
 /** SSL*/
-//define('MYSQL_CLIENT_FLAGS', MYSQLI_CLIENT_SSL);
+/**define('MYSQL_CLIENT_FLAGS', MYSQLI_CLIENT_SSL);
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
@@ -73,7 +73,6 @@ define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
 define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
 define( 'NONCE_SALT',       'put your unique phrase here' );
 
-define('WP_ALLOW_REPAIR', true);
 /**#@-*/
 
 /**
