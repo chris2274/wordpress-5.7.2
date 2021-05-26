@@ -25,7 +25,7 @@ spec:
         - containerPort: 80
         env:
         - name: DATABASE_HOST
-          value: mysqlchris2274.mysql.database.azure.com
+          value: "mysqlchris2274.mysql.database.azure.com"
         - name: DATABASE_USERNAME
           value: "chris"
         - name: DATABASE_PASSWORD
